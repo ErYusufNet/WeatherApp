@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">  <!-- Sayfanın dilini belirtir. 'en' İngilizce'yi temsil eder. -->
+<head>
+    <meta charset="UTF-8">  <!-- Sayfanın karakter kodlamasını UTF-8 olarak ayarlar (Türkçe karakterler dahil olmak üzere tüm karakterleri destekler). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Sayfa düzeninin mobil cihazlara uyumlu olmasını sağlar (responsive). -->
+    <title>Weather App Welcome</title>  <!-- Tarayıcı sekmesindeki başlık kısmını belirler. -->
+    <link rel="stylesheet" href="style.css">  <!-- Sayfanın stilini tanımlayan CSS dosyasını bağlar. -->
+</head>
+<body>
+    <!-- Hava durumu formunu tanımlar -->
+    <form class="weatherForm">  
+        <!-- Şehir adını girmeleri için kullanıcıya metin kutusu sağlar -->
+        <input type="text" class="cityInput" placeholder="Enter city">  
+        <!-- Hava durumu verilerini almak için 'Get Weather' adlı bir buton -->
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <!-- Hava durumu bilgilerini içerecek kartı tanımlar -->
+    <div class="card">  
+        <!-- Şehir adı (statik olarak yazılmış) -->
+        <h1 class="cityDisplay">Miami</h1>  
+        <!-- Sıcaklık (statik olarak yazılmış) -->
+        <p class="tempDisplay">90'f</p>  
+        <!-- Nem oranı (statik olarak yazılmış) -->
+        <p class="humidityDisplay">Humidity: 75%</p>  
+        <!-- Hava durumu açıklaması (statik olarak yazılmış) -->
+        <p class="descDisplay">Clear skies</p>  
+        <!-- Hava durumu simgesi (statik olarak yazılmış) -->
+        <p class="weatherEmoji">:D</p>  
+        <!-- Hata mesajı (statik olarak yazılmış) -->
+        <p class="errorDisplay">Please enter a city</p>  
+    </div>
+
+    <!-- JavaScript dosyasını sayfaya bağlar -->
+    <script src="index.js"></script>  
+</body>
+</html>

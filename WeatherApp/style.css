@@ -1,0 +1,100 @@
+/* Genel body stilini tanımlıyoruz */
+body {
+    font-family: Arial, sans-serif;  /* Yazı tipi Arial veya sans-serif kullanılarak belirlenmiş */
+    background-color: hsl(0, 0%, 95%);  /* Arka plan rengi, çok açık gri (hsl renk modeli) */
+    margin: 0;  /* Sayfanın kenar boşluklarını sıfırlıyoruz */
+    display: flex;  /* Sayfayı esnek kutu modeline göre düzenliyoruz */
+    flex-direction: column;  /* İçeriği dikey olarak yerleştiriyoruz */
+    align-items: center;  /* İçeriği yatayda ortalıyoruz */
+}
+
+/* Hava durumu formunun stilini tanımlıyoruz */
+.weatherForm {
+    margin: 20px;  /* Formun etrafında 20px'lik bir boşluk bırakıyoruz */
+}
+
+/* Şehir adı giriş kutusunun stilini tanımlıyoruz */
+.cityInput {
+    padding: 10px;  /* Giriş kutusunun iç kısmına 10px'lik boşluk bırakıyoruz */
+    font-size: 2rem;  /* Yazı boyutunu 2rem olarak ayarlıyoruz */
+    font-weight: bold;  /* Yazıyı kalın yapıyoruz */
+    border: 2px solid hsla(0, 0%, 20%, 0.3);  /* Dış kenarı 2px kalınlığında, soluk gri renkte bir sınır yapıyoruz */
+    border-radius: 10px;  /* Köşeleri yuvarlatıyoruz */
+    margin: 10px;  /* Kutunun etrafında 10px'lik bir boşluk bırakıyoruz */
+    width: 300px;  /* Genişliğini 300px olarak belirliyoruz */
+}
+
+/* Gönder butonunun stilini tanımlıyoruz */
+button[type="submit"] {
+    padding: 10px 20px;  /* Butonun içindeki yazıya 10px üst-alt, 20px sağ-sol boşluk bırakıyoruz */
+    font-weight: bold;  /* Yazıyı kalın yapıyoruz */
+    font-size: 2rem;  /* Yazı boyutunu 2rem olarak ayarlıyoruz */
+    background-color: hsl(122, 39%, 50%);  /* Butonun arka plan rengini yeşil yapıyoruz */
+    color: white;  /* Yazı rengini beyaz yapıyoruz */
+    border: none;  /* Butonun kenarlıklarını kaldırıyoruz */
+    border-radius: 5px;  /* Butonun köşelerini yuvarlatıyoruz */
+    cursor: pointer;  /* Buton üzerine gelindiğinde fare işaretçisini 'pointer' (tıklanabilir) yapıyoruz */
+}
+
+/* Butona tıklama/hover durumunda stil değişikliği */
+button[type="submit"]:hover {
+    background-color: hsl(122, 39%, 40%);  /* Hover (üzerine gelindiğinde) butonun rengini daha koyu yeşil yapıyoruz */
+}
+
+/* Hava durumu bilgilerini içeren kartın stilini tanımlıyoruz */
+.card {
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));  /* Karte sağdan-sola, açık mavi ve sarı arasında bir geçiş yapıyoruz */
+    padding: 50px;  /* Kartın içine 50px'lik bir boşluk bırakıyoruz */
+    border-radius: 10px;  /* Kartın köşelerini yuvarlatıyoruz */
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);  /* Kartın etrafına hafif gölge ekliyoruz */
+    min-width: 300px;  /* Kartın minimum genişliğini 300px olarak belirliyoruz */
+    display: flex;  /* Kart içeriğini esnek kutu modeline göre düzenliyoruz */
+    flex-direction: column;  /* Kart içeriğini dikey yönde yerleştiriyoruz */
+    align-items: center;  /* İçeriği yatayda ortalıyoruz */
+}
+
+/* H1 başlığının stilini tanımlıyoruz */
+h1 {
+    margin-top: 0;  /* Üstten boşluk bırakmıyoruz */
+    margin-bottom: 25px;  /* Alt kısmına 25px'lik boşluk bırakıyoruz */
+}
+
+/* Paragrafların stilini tanımlıyoruz */
+p {
+    font-size: 1.5rem;  /* Yazı boyutunu 1.5rem olarak ayarlıyoruz */
+    margin: 5px 0;  /* Paragraflar arasında 5px'lik bir boşluk bırakıyoruz */
+}
+
+/* Şehir adı ve sıcaklık bilgisi için özel stil */
+.cityDisplay, .tempDisplay {
+    font-size: 3.5rem;  /* Yazı boyutunu 3.5rem olarak ayarlıyoruz */
+    font-weight: bold;  /* Yazıyı kalın yapıyoruz */
+    color: hsla(0, 0%, 0%, 0.8);  /* Yazı rengini siyah yapıyoruz, ancak şeffaflık ekliyoruz */
+    margin-bottom: 25px;  /* Alt kısmına 25px'lik boşluk bırakıyoruz */
+}
+
+/* Nem oranı bilgisi için stil */
+.humidityDisplay {
+    font-weight: bold;  /* Yazıyı kalın yapıyoruz */
+    margin-bottom: 25px;  /* Alt kısmına 25px'lik boşluk bırakıyoruz */
+}
+
+/* Açıklama (hava durumu) bilgisi için stil */
+.descDisplay {
+    font-style: italic;  /* Yazıyı italik yapıyoruz */
+    font-weight: bold;  /* Yazıyı kalın yapıyoruz */
+    font-size: 2rem;  /* Yazı boyutunu 2rem olarak ayarlıyoruz */
+}
+
+/* Hava durumu simgesi için stil */
+.weatherEmoji {
+    margin: 0;  /* Üst ve alt boşlukları sıfırlıyoruz */
+    font-size: 7.5rem;  /* Emoji boyutunu 7.5rem olarak ayarlıyoruz */
+}
+
+/* Hata mesajlarının stilini tanımlıyoruz */
+.errorDisplay {
+    font-size: 2.5rem;  /* Yazı boyutunu 2.5rem olarak ayarlıyoruz */
+    font-weight: bold;  /* Yazıyı kalın yapıyoruz */
+    color: hsla(0, 0%, 0%, 0.75);  /* Hata mesajının rengini siyah yapıyoruz, ancak şeffaflık ekliyoruz */
+}
